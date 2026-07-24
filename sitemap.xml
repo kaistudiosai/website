@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 1. PÁGINA DE INICIO (Versión predeterminada y en Español) -->
+  <url>
+    <loc>https://kai-studios.com/</loc>
+    <!-- Indica a Google que esta URL es para español (es) y es la predeterminada (x-default) -->
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai-studios.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/" />
+    <!-- Indica que la versión alternativa en inglés está en /en/ -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/" />
+    <!-- Actualiza esta fecha a la última vez que cambiaste el contenido de esta página -->
+    <lastmod>2024-05-20</lastmod> 
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. PÁGINA DE INICIO (Versión en Inglés) -->
+  <url>
+    <loc>https://kai-studios.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai-studios.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/" />
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 3. TÉRMINOS Y CONDICIONES (Versión en Español) -->
+  <url>
+    <loc>https://kai-studios.com/terminos-y-condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/terminos-y-condiciones.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/terminos-y-condiciones.html" />
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 4. TERMS & CONDITIONS (Versión en Inglés) -->
+  <url>
+    <loc>https://kai-studios.com/en/terminos-y-condiciones.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/terminos-y-condiciones.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/terminos-y-condiciones.html" />
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

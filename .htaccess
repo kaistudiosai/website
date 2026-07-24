@@ -1,0 +1,59 @@
+# ----------------------------------------------------------------------
+# | CONFIGURACIÓN KAI STUDIOS - INICIO
+# ----------------------------------------------------------------------
+
+# 1. MANEJO DE ERROR 404 PERSONALIZADO
+# Ref: Define tu página de error profesional. Debe estar en la raíz.
+ErrorDocument 404 /404.html
+
+# 2. SEGURIDAD A NIVEL DE SERVIDOR Y NAVEGADOR (Hardening)
+
+<IfModule mod_headers.c>
+    # Reforzar HTTPS (HSTS)
+    # Indica al navegador que solo use HTTPS para este dominio durante un año.
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Prevenir Clickjacking
+    # Impide que tu sitio sea cargado dentro de un iframe en otros sitios no autorizados.
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Prevenir ataques de sniffing de MIME (X-Content-Type-Options)
+    # Obliga al navegador a respetar el Content-Type enviado por el servidor.
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Habilitar filtro XSS (Cross-Site Scripting)
+    # Activa la protección XSS integrada en navegadores modernos.
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Política de Referencia (Referrer-Policy)
+    # Controla qué información se envía al hacer clic en un enlace hacia fuera.
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Política de Permisos (Permissions-Policy)
+    # Desactiva características del navegador que tu sitio no necesita por seguridad (cámara, micro, geo).
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+</IfModule>
+
+# 3. PROTECCIÓN DE ARCHIVOS SENSIBLES
+
+# Impedir el acceso a archivos que empiezan por punto (como .htaccess, .git, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Impedir el acceso a archivos de configuración comunes y logs
+<FilesMatch "^(wp-config\.php|php\.ini|config\.php|\.htaccess|.*\.log|web\.config)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Desactivar la navegación de directorios (Directory Browsing)
+# Si no hay un index.php/html, muestra un 403 en lugar de listar los archivos.
+Options -Indexes
+
+# ----------------------------------------------------------------------
+# | CONFIGURACIÓN KAI STUDIOS - FIN
+# ----------------------------------------------------------------------
+
+# (Si tienes reglas existentes por debajo de esta línea, como las de WordPress, déjalas ahí)

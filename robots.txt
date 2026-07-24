@@ -1,0 +1,46 @@
+# ===================================================
+# robots.txt para KAI STUDIOS
+# Optimizado para Buscadores Tradicionales y Agentes de IA
+# ===================================================
+
+# REGLAS GENERALES PARA TODOS LOS ROBOTS
+# Incluye Googlebot, Bingbot, ChatGPT (GPTBot), Claude-Web, etc.
+User-agent: *
+
+# Permitir indexar todo el contenido público del sitio
+Allow: /
+
+# DISALLOW (Zonas Prohibidas)
+# Bloquea acceso a carpetas de sistema, scripts privados o temporales.
+# (Ajusta estas rutas si usas un CMS específico como WordPress o Laravel)
+Disallow: /cgi-bin/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /private/
+# Si usas WordPress, descomenta la siguiente línea:
+# Disallow: /wp-admin/
+
+# REGLAS ESPECÍFICAS PARA AGENTES DE IA (Opcional pero recomendado)
+# Aunque 'User-agent: *' ya los cubre, definirlo explícitamente asegura
+# que estamos abiertos a la innovación de la IA.
+
+# Agente de OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# Agente de Anthropic (Claude)
+User-agent: Claude-Web
+Allow: /
+
+# Agente de Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Agente de Common Crawl (Usado para entrenar muchas IAs)
+User-agent: CCBot
+Allow: /
+
+# SITEMAP (Muy importante para buscadores tradicionales)
+# Reemplaza 'tudominio.com' por tu dominio real.
+# Asegúrate de tener un sitemap.xml generado.
+Sitemap: https://kai-studios.com/sitemap.xml

@@ -27,7 +27,29 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 3. TÉRMINOS Y CONDICIONES (Versión en Español) -->
+  <!-- 3. KAI LABS (Versión predeterminada y en Español) -->
+  <url>
+    <loc>https://kai-studios.com/labs.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai-studios.com/labs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/labs.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/labs.html" />
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. KAI LABS (Versión en Inglés) -->
+  <url>
+    <loc>https://kai-studios.com/en/labs.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kai-studios.com/labs.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/labs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/labs.html" />
+    <lastmod>2024-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. TÉRMINOS Y CONDICIONES (Versión en Español) -->
   <url>
     <loc>https://kai-studios.com/terminos-y-condiciones.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://kai-studios.com/terminos-y-condiciones.html" />
@@ -37,7 +59,7 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- 4. TERMS & CONDITIONS (Versión en Inglés) -->
+  <!-- 6. TERMS & CONDITIONS (Versión en Inglés) -->
   <url>
     <loc>https://kai-studios.com/en/terminos-y-condiciones.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://kai-studios.com/en/terminos-y-condiciones.html" />

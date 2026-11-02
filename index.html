@@ -11,12 +11,12 @@
     <meta name="description"
         content="KAI Studios desarrolla software de automatización inteligente y Agentes de IA para empresas. Reduce costos operativos y escala tu rentabilidad con integración sin fricción.">
     <meta name="keywords"
-        content="Inteligencia Artificial, Automatización Empresarial, Agentes de IA, KAI Studios, Rentabilidad Operativa, Venture Studio">
+        content="Inteligencia Artificial, Automatización Empresarial, Agentes de IA, KAI Studios, Rentabilidad Operativa, Venture Studio, AskKibo, CaloriTrack, HitEra">
     <link rel="canonical" href="https://kai-studios.com/">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KAI Studios">
-    <meta property="og:title" content="KAI STUDIOS | Motores de Rentabilidad con IA">
+    <meta property="og:title" content="KAI STUDIOS | Diseñamos el Mañana con IA">
     <meta property="og:description"
         content="Automatizamos la operación de tu empresa con Agentes de Inteligencia Artificial para reducir costos y multiplicar la capacidad de tu equipo.">
     <meta property="og:url" content="https://kai-studios.com/">
@@ -49,7 +49,8 @@
         "description": "Estudio de desarrollo de software de automatización inteligente, Agentes de Inteligencia Artificial para empresas y Venture Studio.",
         "sameAs": [
             "https://askkibo.com",
-            "https://caloritrack.com"
+            "https://caloritrack.com",
+            "https://hitera.app"
         ]
     }
     </script>
@@ -608,8 +609,16 @@
             flex-direction: row;
         }
 
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
         .flex-1 {
             flex: 1 1 0%;
+        }
+
+        .flex-grow {
+            flex-grow: 1;
         }
 
         .flex-shrink-0 {
@@ -779,6 +788,10 @@
             margin-top: 3rem;
         }
 
+        .mt-auto {
+            margin-top: auto;
+        }
+
         .mb-2 {
             margin-bottom: 0.5rem;
         }
@@ -886,6 +899,10 @@
 
         .hover\:border-cyan-400\/30:hover {
             border-color: rgba(34, 211, 238, 0.35);
+        }
+
+        .hover\:border-pink-400\/30:hover {
+            border-color: rgba(255, 42, 122, 0.38);
         }
 
         .group:hover .group-hover\:border-cyan-400 {
@@ -1119,7 +1136,7 @@
         }
 
         .text-pink-400 {
-            color: #f472b6;
+            color: #ff2a7a;
         }
 
         .text-pink-500 {
@@ -1152,6 +1169,10 @@
 
         .hover\:text-cyan-400:hover {
             color: #22d3ee;
+        }
+
+        .hover\:text-pink-400:hover {
+            color: #ff2a7a;
         }
 
         .hover\:text-purple-400:hover {
@@ -1408,7 +1429,7 @@
 
                 <h1 class="text-[12vw] md:text-[8vw] leading-[0.85] font-black tracking-tighter uppercase opacity-0 animate-fade-in-up"
                     style="animation-delay: 0.1s;">
-                    Motores de <br /> <span class="text-outline">Rentabilidad</span>
+                    Diseñamos <br /> <span class="text-outline">El Mañana</span>
                 </h1>
 
                 <p class="mt-8 md:mt-12 text-lg md:text-xl text-gray-400 font-light max-w-3xl mx-auto opacity-0 animate-fade-in-up leading-relaxed"
@@ -1665,7 +1686,7 @@
             </div>
         </section>
 
-        <!-- KAI LABS EN EL HOME -->
+        <!-- KAI LABS EN EL HOME (3 PRODUCTOS PROPIOS) -->
         <section id="kai-labs" class="w-full py-24 md:py-32 px-6 relative overflow-hidden reveal">
             <div
                 class="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent pointer-events-none">
@@ -1676,31 +1697,32 @@
                         Propios</h2>
                     <h3 class="text-4xl md:text-5xl font-black tracking-tight">Predicamos con el ejemplo.</h3>
                     <p class="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">Además de transformar empresas, construimos
-                        productos propios de cero fricción para llevar al límite la Inteligencia Artificial y la
-                        experiencia de usuario.</p>
+                        productos propios de cero fricción para llevar al límite la tecnología y la experiencia de
+                        usuario.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
 
+                    <!-- AskKibo -->
                     <div
-                        class="spotlight-card p-8 md:p-10 rounded-3xl border border-white/10 hover:border-green-400/30 group relative overflow-hidden">
+                        class="spotlight-card p-8 rounded-3xl border border-white/10 hover:border-green-400/30 group relative overflow-hidden flex flex-col">
                         <div class="absolute top-0 right-0 w-32 h-32 pointer-events-none"
                             style="background: radial-gradient(circle, rgba(34,197,94,0.18) 0%, transparent 70%);">
                         </div>
-                        <h4 class="text-2xl font-bold mb-2 flex items-center gap-3">
-                            AskKibo
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h4 class="text-2xl font-bold">AskKibo</h4>
                             <span
-                                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono tracking-widest text-green-400 uppercase">Nativo
-                                en WhatsApp</span>
-                        </h4>
-                        <p class="text-white/80 font-medium mb-4">Tu asistente financiero personal en WhatsApp.</p>
-                        <p class="text-gray-400 font-light leading-relaxed mb-6">
-                            Olvídate de las aplicaciones que requieren ocho pasos para registrar un gasto. Envía una
-                            foto de tu recibo o un audio: «Divídelo a la mitad con Ale». Kibo categoriza el gasto,
-                            ajusta los saldos compartidos y avisa a tus amigos al instante con privacidad total.
+                                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono tracking-widest text-green-400 uppercase">WhatsApp</span>
+                        </div>
+                        <p class="text-white/80 font-medium mb-4 text-sm">Tu asistente financiero personal en WhatsApp.
+                        </p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed mb-6 flex-grow">
+                            Olvídate de las apps que toman ocho pasos para registrar un gasto. Envía una foto del ticket
+                            o un audio: «Divídelo a la mitad con Ale». Kibo categoriza el gasto, ajusta saldos en
+                            KiboSplit y avisa a tus amigos al instante.
                         </p>
                         <a href="https://askkibo.com" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center text-sm font-bold text-white hover:text-green-400 transition-colors">
+                            class="inline-flex items-center text-sm font-bold text-white hover:text-green-400 transition-colors mt-auto">
                             Descubre AskKibo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1709,25 +1731,26 @@
                         </a>
                     </div>
 
+                    <!-- CaloriTrack -->
                     <div
-                        class="spotlight-card p-8 md:p-10 rounded-3xl border border-white/10 hover:border-cyan-400/30 group relative overflow-hidden">
+                        class="spotlight-card p-8 rounded-3xl border border-white/10 hover:border-cyan-400/30 group relative overflow-hidden flex flex-col">
                         <div class="absolute top-0 right-0 w-32 h-32 pointer-events-none"
                             style="background: radial-gradient(circle, rgba(6,182,212,0.18) 0%, transparent 70%);">
                         </div>
-                        <h4 class="text-2xl font-bold mb-2 flex items-center gap-3">
-                            CaloriTrack
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h4 class="text-2xl font-bold">CaloriTrack</h4>
                             <span
                                 class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono tracking-widest text-cyan-400 uppercase">iOS
                                 / watchOS</span>
-                        </h4>
-                        <p class="text-white/80 font-medium mb-4">Bienestar integral personalizado con IA.</p>
-                        <p class="text-gray-400 font-light leading-relaxed mb-6">
-                            Un ecosistema de salud diseñado para iPhone y Apple Watch. Más allá de registrar hábitos,
-                            integra planes nutricionales, ayuno intermitente, análisis de sueño, descanso auditivo y a
-                            <strong>Kai</strong>, tu coach de bienestar físico y mental disponible 24/7.
+                        </div>
+                        <p class="text-white/80 font-medium mb-4 text-sm">Bienestar integral personalizado con IA.</p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed mb-6 flex-grow">
+                            Ecosistema nativo para iPhone y Apple Watch. Integra nutrición personalizada, ayuno
+                            intermitente, análisis de sueño, descanso auditivo y a <strong>Kai</strong>, tu coach
+                            inteligente de bienestar físico y mental disponible 24/7.
                         </p>
                         <a href="https://caloritrack.com" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center text-sm font-bold text-white hover:text-cyan-400 transition-colors">
+                            class="inline-flex items-center text-sm font-bold text-white hover:text-cyan-400 transition-colors mt-auto">
                             Descubre CaloriTrack <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1735,6 +1758,36 @@
                             </svg>
                         </a>
                     </div>
+
+                    <!-- HitEra -->
+                    <div
+                        class="spotlight-card p-8 rounded-3xl border border-white/10 hover:border-pink-400/30 group relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 right-0 w-32 h-32 pointer-events-none"
+                            style="background: radial-gradient(circle, rgba(255,42,122,0.18) 0%, transparent 70%);">
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h4 class="text-2xl font-bold">HitEra</h4>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono tracking-widest text-pink-400 uppercase">PWA
+                                • Smart TV</span>
+                        </div>
+                        <p class="text-white/80 font-medium mb-4 text-sm">Escucha el hit. Ponle año. ¡Róbate la noche!
+                        </p>
+                        <p class="text-gray-400 font-light text-sm leading-relaxed mb-6 flex-grow">
+                            Plataforma musical multijugador en tiempo real (clásicos de los 50s a los 2020s). Cada
+                            celular es un mando con <strong>Gafete de DJ transferible</strong>, tablero para
+                            <strong>Smart TV</strong>, poderes con <strong>Discos (💿)</strong> y asaltos de 5 segundos.
+                        </p>
+                        <a href="https://hitera.app" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center text-sm font-bold text-white hover:text-pink-400 transition-colors mt-auto">
+                            Descubre HitEra <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="text-center">
@@ -1895,7 +1948,7 @@
 
             <div class="max-w-2xl mx-auto relative z-10">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">Hablemos de Rentabilidad</h2>
+                    <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">Comienza la Evolución</h2>
                     <p class="text-gray-400">Cuéntanos qué proceso deseas optimizar y diseñaremos una propuesta a la
                         medida de tu empresa.</p>
                 </div>
@@ -1969,6 +2022,8 @@
                         class="text-gray-400 hover:text-green-400 transition-colors">AskKibo</a>
                     <a href="https://caloritrack.com" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-cyan-400 transition-colors">CaloriTrack</a>
+                    <a href="https://hitera.app" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-pink-400 transition-colors">HitEra</a>
                     <a href="labs.html" class="text-gray-400 hover:text-purple-400 transition-colors">Portafolio</a>
                 </div>
             </div>
@@ -2003,7 +2058,7 @@
             });
         });
 
-        // Detector de scroll pasivo con bloqueo de estado (No recalcula el DOM en cada píxel)
+        // Detector de scroll pasivo con bloqueo de estado
         const nav = document.getElementById('navbar');
         let isScrolled = false;
         window.addEventListener('scroll', () => {
@@ -2020,7 +2075,7 @@
             }
         }, { passive: true });
 
-        // Aparición progresiva de secciones (IntersectionObserver ligero)
+        // Aparición progresiva de secciones (IntersectionObserver)
         if ('IntersectionObserver' in window) {
             const revealObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -2040,7 +2095,7 @@
             });
         }
 
-        // Iluminación reactiva en tarjetas (solo en dispositivos con puntero para cuidar batería móvil)
+        // Iluminación reactiva en tarjetas (solo en dispositivos con puntero)
         if (window.matchMedia('(pointer: fine)').matches) {
             document.querySelectorAll('.spotlight-card').forEach(card => {
                 card.addEventListener('mousemove', e => {
@@ -2051,7 +2106,7 @@
             });
         }
 
-        // Envío de formulario con ruta corregida
+        // Envío de formulario hacia send_mail.php
         document.getElementById('lead-form').addEventListener('submit', async function (e) {
             e.preventDefault();
 

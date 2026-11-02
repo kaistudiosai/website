@@ -1,91 +1,572 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Términos y Condiciones | Kai Studios</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#050505">
+    <title>Términos y Condiciones | KAI Studios</title>
+    <meta name="description"
+        content="Términos y Condiciones Globales de Uso Corporativo de KAI STUDIOS, S.A.S. y marco legal de sus plataformas AskKibo, CaloriTrack y HitEra.">
+    <link rel="canonical" href="https://kai-studios.com/terminos-y-condiciones.html">
+
+    <link rel="alternate" hreflang="x-default" href="https://kai-studios.com/terminos-y-condiciones.html" />
+    <link rel="alternate" hreflang="en" href="https://kai-studios.com/en/terminos-y-condiciones.html" />
+    <link rel="alternate" hreflang="es" href="https://kai-studios.com/terminos-y-condiciones.html" />
     <link rel="icon" type="image/png" href="/images/favicon-1.png">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tipografías optimizadas sin bloqueo de renderizado -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'], 
-                        mono: ['Space Grotesk', 'sans-serif'], 
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#050505',
-                            gray: '#1A1A1A',
-                            accent: '#38bdf8', 
-                        }
-                    }
+        (function () {
+            try {
+                const preferredLang = localStorage.getItem('preferred_lang');
+                if (preferredLang === 'en' && !window.location.pathname.includes('/en/')) {
+                    window.location.href = 'en/terminos-y-condiciones.html';
                 }
-            }
-        }
+            } catch (e) { }
+        })();
     </script>
-    
+
+    <!-- CSS de Producción Compilado y Optimizado para WebKit/iOS (Sin feTurbulence fixed) -->
     <style>
-        body {
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            scroll-behavior: smooth;
             background-color: #050505;
             color: #e5e5e5;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit;
+            background-color: #050505;
+            color: #e5e5e5;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        svg {
+            display: block;
+        }
+
+        ::selection {
+            background-color: #ffffff;
+            color: #000000;
         }
 
         ::-webkit-scrollbar {
             width: 6px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #050505; 
+            background: #050505;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: #333; 
+            background: #262626;
             border-radius: 10px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
+            background: #404040;
+        }
+
+        /* Ambiente ligero acelerado por GPU */
+        .bg-grid-subtle {
+            background-size: 48px 48px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 40%, transparent 100%);
+        }
+
+        .font-sans {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .font-mono {
+            font-family: 'Space Grotesk', monospace;
         }
 
         .text-gradient {
-            background: linear-gradient(to right, #fff, #888);
+            background: linear-gradient(to right, #ffffff, #9ca3af);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        /* Utilidades Compiladas */
+        .fixed {
+            position: fixed;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .inset-0 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .top-0 {
+            top: 0;
+        }
+
+        .z-0 {
+            z-index: 0;
+        }
+
+        .z-10 {
+            z-index: 10;
+        }
+
+        .z-50 {
+            z-index: 50;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .w-auto {
+            width: auto;
+        }
+
+        .h-4 {
+            height: 1rem;
+        }
+
+        .max-w-2xl {
+            max-width: 42rem;
+        }
+
+        .max-w-4xl {
+            max-width: 56rem;
+        }
+
+        .max-w-7xl {
+            max-width: 80rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-row {
+            flex-direction: row;
+        }
+
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+        .items-start {
+            align-items: flex-start;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-10 {
+            gap: 2.5rem;
+        }
+
+        .gap-12 {
+            gap: 3rem;
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            margin-top: 1rem;
+        }
+
+        .space-y-10> :not([hidden])~ :not([hidden]) {
+            margin-top: 2.5rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .pt-32 {
+            padding-top: 8rem;
+        }
+
+        .pb-8 {
+            padding-bottom: 2rem;
+        }
+
+        .pb-24 {
+            padding-bottom: 6rem;
+        }
+
+        .pr-4 {
+            padding-right: 1rem;
+        }
+
+        .pl-5 {
+            padding-left: 1.25rem;
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-16 {
+            margin-bottom: 4rem;
+        }
+
+        .list-disc {
+            list-style-type: disc;
+        }
+
+        .list-none {
+            list-style-type: none;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .border-t {
+            border-top-width: 1px;
+        }
+
+        .border-b {
+            border-bottom-width: 1px;
+        }
+
+        .border-r {
+            border-right-width: 1px;
+        }
+
+        .border-white\/5 {
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+
+        .border-white\/10 {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .bg-black {
+            background-color: #000000;
+        }
+
+        .bg-brand-dark\/80 {
+            background-color: rgba(5, 5, 5, 0.85);
+        }
+
+        .bg-brand-gray\/50 {
+            background-color: rgba(26, 26, 26, 0.6);
+        }
+
+        .backdrop-blur-md {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .text-\[10px\] {
+            font-size: 10px;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.35rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .font-light {
+            font-weight: 300;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-black {
+            font-weight: 900;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .leading-relaxed {
+            line-height: 1.68;
+        }
+
+        .tracking-tight {
+            letter-spacing: -0.025em;
+        }
+
+        .tracking-wide {
+            letter-spacing: 0.025em;
+        }
+
+        .tracking-widest {
+            letter-spacing: 0.1em;
+        }
+
+        .tracking-\[0\.2em\] {
+            letter-spacing: 0.2em;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .text-white\/40 {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .text-gray-300 {
+            color: #d1d5db;
+        }
+
+        .text-gray-400 {
+            color: #9ca3af;
+        }
+
+        .text-gray-500 {
+            color: #6b7280;
+        }
+
+        .text-brand-accent {
+            color: #38bdf8;
+        }
+
+        .hover\:text-white:hover {
+            color: #ffffff;
+        }
+
+        .hover\:text-green-400:hover {
+            color: #4ade80;
+        }
+
+        .hover\:text-cyan-400:hover {
+            color: #22d3ee;
+        }
+
+        .hover\:text-pink-400:hover {
+            color: #ff2a7a;
+        }
+
+        .hover\:text-purple-400:hover {
+            color: #c084fc;
+        }
+
+        .hover\:underline:hover {
+            text-decoration: underline;
+        }
+
+        .pointer-events-none {
+            pointer-events: none;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .transition-colors {
+            transition: color 0.2s ease;
+        }
+
+        @media (min-width: 768px) {
+            .md\:block {
+                display: block;
+            }
+
+            .md\:flex-row {
+                flex-direction: row;
+            }
+
+            .md\:items-center {
+                align-items: center;
+            }
+
+            .md\:h-5 {
+                height: 1.25rem;
+            }
+
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1.15;
+            }
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans selection:bg-white selection:text-black antialiased">
 
+<body class="antialiased">
+
+    <div class="fixed inset-0 bg-grid-subtle pointer-events-none z-0"></div>
+
+    <!-- Header Fijo Optimizado -->
     <header class="fixed top-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5">
         <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            
-            <div class="flex items-center">
+
+            <a href="index.html" class="flex items-center" aria-label="KAI Studios Inicio">
                 <svg class="h-4 md:h-5 w-auto" viewBox="0 0 403 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M43 4L82 26.5V71.5L43 94L4 71.5V26.5L43 4Z" stroke="url(#paint0_linear_0_1)" stroke-width="8" stroke-linejoin="round"/>
-                    <path d="M103.971 66.0001V31.8183H111.198V46.8897H111.648L123.949 31.8183H132.612L119.927 47.1233L132.762 66.0001H124.116L114.753 51.9468L111.198 56.2863V66.0001H103.971ZM142.267 66.0001H134.523L146.323 31.8183H155.636L167.419 66.0001H159.675L151.113 39.6294H150.846L142.267 66.0001ZM141.783 52.5644H160.075V58.2057H141.783V52.5644ZM178.76 31.8183V66.0001H171.533V31.8183H178.76ZM214.127 41.6489C213.994 40.3025 213.421 39.2566 212.408 38.5111C211.395 37.7656 210.021 37.3929 208.286 37.3929C207.106 37.3929 206.11 37.5598 205.298 37.8936C204.486 38.2162 203.863 38.6669 203.429 39.2455C203.006 39.8241 202.794 40.4806 202.794 41.2149C202.772 41.8269 202.9 42.361 203.178 42.8172C203.468 43.2734 203.863 43.6684 204.363 44.0022C204.864 44.3249 205.443 44.6086 206.099 44.8534C206.756 45.0871 207.457 45.2874 208.202 45.4543L211.273 46.1887C212.764 46.5225 214.133 46.9675 215.379 47.5239C216.625 48.0802 217.704 48.7645 218.617 49.5768C219.529 50.3891 220.236 51.346 220.737 52.4475C221.248 53.5491 221.51 54.812 221.521 56.2363C221.51 58.3281 220.976 60.1418 219.919 61.6773C218.873 63.2017 217.359 64.3867 215.379 65.2323C213.409 66.0669 211.034 66.4841 208.252 66.4841C205.493 66.4841 203.089 66.0613 201.042 65.2157C199.006 64.37 197.415 63.1182 196.268 61.4603C195.134 59.7913 194.538 57.7273 194.483 55.2682H201.476C201.554 56.4143 201.882 57.3712 202.461 58.1389C203.05 58.8956 203.835 59.4686 204.814 59.8581C205.804 60.2364 206.922 60.4255 208.169 60.4255C209.393 60.4255 210.455 60.2475 211.357 59.8914C212.269 59.5354 212.975 59.0402 213.476 58.406C213.977 57.7718 214.227 57.043 214.227 56.2196C214.227 55.4518 213.999 54.8064 213.543 54.2835C213.098 53.7605 212.441 53.3154 211.574 52.9483C210.717 52.5811 209.665 52.2473 208.419 51.9468L204.697 51.0122C201.815 50.3112 199.54 49.2152 197.871 47.7242C196.202 46.2332 195.373 44.2248 195.384 41.699C195.373 39.6294 195.924 37.8212 197.036 36.2746C198.16 34.728 199.701 33.5207 201.659 32.6528C203.618 31.7849 205.843 31.351 208.336 31.351C210.873 31.351 213.087 31.7849 214.978 32.6528C216.881 33.5207 218.361 34.728 219.418 36.2746C220.475 37.8212 221.02 39.6127 221.054 41.6489H214.127ZM225.08 37.7767V31.8183H253.153V37.7767H242.688V66.0001H235.545V37.7767H225.08ZM278.89 31.8183H286.117V54.0164C286.117 56.5089 285.521 58.6897 284.331 60.559C283.151 62.4284 281.499 63.886 279.374 64.9319C277.249 65.9667 274.773 66.4841 271.947 66.4841C269.109 66.4841 266.628 65.9667 264.503 64.9319C262.378 63.886 260.725 62.4284 259.546 60.559C258.366 58.6897 257.777 56.5089 257.777 54.0164V31.8183H265.003V53.3989C265.003 54.7007 265.287 55.8579 265.855 56.8705C266.433 57.883 267.246 58.6786 268.291 59.2572C269.337 59.8358 270.556 60.1251 271.947 60.1251C273.349 60.1251 274.567 59.8358 275.602 59.2572C276.648 58.6786 277.454 57.883 278.022 56.8705C278.601 55.8579 278.89 54.7007 278.89 53.3989V31.8183ZM304.18 66.0001H292.063V31.8183H304.28C307.718 31.8183 310.678 32.5026 313.159 33.8712C315.641 35.2287 317.549 37.1814 318.884 39.7295C320.23 42.2776 320.904 45.3263 320.904 48.8758C320.904 52.4364 320.23 55.4963 318.884 58.0555C317.549 60.6147 315.629 62.5786 313.126 63.9472C310.633 65.3158 307.651 66.0001 304.18 66.0001ZM299.29 59.808H303.879C306.016 59.808 307.813 59.4297 309.27 58.673C310.739 57.9053 311.841 56.7203 312.575 55.118C313.321 53.5046 313.693 51.4239 313.693 48.8758C313.693 46.35 313.321 44.286 312.575 42.6837C311.841 41.0814 310.745 39.902 309.287 39.1453C307.829 38.3887 306.032 38.0104 303.896 38.0104H299.29V59.808ZM333.484 31.8183V66.0001H326.257V31.8183H333.484ZM370.841 48.9092C370.841 52.6367 370.135 55.8079 368.721 58.4227C367.319 61.0375 365.406 63.0348 362.98 64.4145C360.565 65.7831 357.85 66.4674 354.835 66.4674C351.797 66.4674 349.071 65.7776 346.657 64.3978C344.242 63.0181 342.334 61.0208 340.932 58.406C339.53 55.7912 338.829 52.6256 338.829 48.9092C338.829 45.1817 339.53 42.0105 340.932 39.3957C342.334 36.7809 344.242 34.7892 346.657 33.4206C349.071 32.0408 351.797 31.351 354.835 31.351C357.85 31.351 360.565 32.0408 362.98 33.4206C365.406 34.7892 367.319 36.7809 368.721 39.3957C370.135 42.0105 370.841 45.1817 370.841 48.9092ZM363.514 48.9092C363.514 46.4947 363.152 44.4584 362.429 42.8005C361.717 41.1426 360.71 39.8853 359.408 39.0285C358.106 38.1717 356.582 37.7434 354.835 37.7434C353.088 37.7434 351.564 38.1717 350.262 39.0285C348.96 39.8853 347.948 41.1426 347.224 42.8005C346.512 44.4584 346.156 46.4947 346.156 48.9092C346.156 51.3237 346.512 53.3599 347.224 55.0179C347.948 56.6758 348.96 57.9331 350.262 58.7899C351.564 59.6466 353.088 60.075 354.835 60.075C356.582 60.075 358.106 59.6466 359.408 58.7899C360.71 57.9331 361.717 56.6758 362.429 55.0179C363.152 53.3599 363.514 51.3237 363.514 48.9092ZM394.737 41.6489C394.604 40.3025 394.031 39.2566 393.018 38.5111C392.006 37.7656 390.632 37.3929 388.896 37.3929C387.716 37.3929 386.721 37.5598 385.908 37.8936C385.096 38.2162 384.473 38.6669 384.039 39.2455C383.616 39.8241 383.405 40.4806 383.405 41.2149C383.382 41.8269 383.51 42.361 383.789 42.8172C384.078 43.2734 384.473 43.6684 384.974 44.0022C385.474 44.3249 386.053 44.6086 386.709 44.8534C387.366 45.0871 388.067 45.2874 388.812 45.4543L391.883 46.1887C393.374 46.5225 394.743 46.9675 395.989 47.5239C397.235 48.0802 398.315 48.7645 399.227 49.5768C400.14 50.3891 400.846 51.346 401.347 52.4475C401.859 53.5491 402.12 54.812 402.131 56.2363C402.12 58.3281 401.586 60.1418 400.529 61.6773C399.483 63.2017 397.97 64.3867 395.989 65.2323C394.02 66.0669 391.644 66.4841 388.862 66.4841C386.103 66.4841 383.7 66.0613 381.652 65.2157C379.616 64.37 378.025 63.1182 376.879 61.4603C375.744 59.7913 375.149 57.7273 375.093 55.2682H382.086C382.164 56.4143 382.492 57.3712 383.071 58.1389C383.661 58.8956 384.445 59.4686 385.424 59.8581C386.415 60.2364 387.533 60.4255 388.779 60.4255C390.003 60.4255 391.066 60.2475 391.967 59.8914C392.879 59.5354 393.586 59.0402 394.087 58.406C394.587 57.7718 394.838 57.043 394.838 56.2196C394.838 55.4518 394.61 54.8064 394.153 54.2835C393.708 53.7605 393.052 53.3154 392.184 52.9483C391.327 52.5811 390.276 52.2473 389.029 51.9468L385.307 51.0122C382.426 50.3112 380.15 49.2152 378.481 47.7242C376.812 46.2332 375.983 44.2248 375.994 41.699C375.983 39.6294 376.534 37.8212 377.647 36.2746C378.77 34.728 380.311 33.5207 382.27 32.6528C384.228 31.7849 386.454 31.351 388.946 31.351C391.483 31.351 393.697 31.7849 395.589 32.6528C397.491 33.5207 398.971 34.728 400.028 36.2746C401.085 37.8212 401.631 39.6127 401.664 41.6489H394.737Z" fill="white"/>
+                    <path d="M43 4L82 26.5V71.5L43 94L4 71.5V26.5L43 4Z" stroke="url(#paint0_linear_0_1)"
+                        stroke-width="8" stroke-linejoin="round" />
+                    <path
+                        d="M103.971 66.0001V31.8183H111.198V46.8897H111.648L123.949 31.8183H132.612L119.927 47.1233L132.762 66.0001H124.116L114.753 51.9468L111.198 56.2863V66.0001H103.971ZM142.267 66.0001H134.523L146.323 31.8183H155.636L167.419 66.0001H159.675L151.113 39.6294H150.846L142.267 66.0001ZM141.783 52.5644H160.075V58.2057H141.783V52.5644ZM178.76 31.8183V66.0001H171.533V31.8183H178.76ZM214.127 41.6489C213.994 40.3025 213.421 39.2566 212.408 38.5111C211.395 37.7656 210.021 37.3929 208.286 37.3929C207.106 37.3929 206.11 37.5598 205.298 37.8936C204.486 38.2162 203.863 38.6669 203.429 39.2455C203.006 39.8241 202.794 40.4806 202.794 41.2149C202.772 41.8269 202.9 42.361 203.178 42.8172C203.468 43.2734 203.863 43.6684 204.363 44.0022C204.864 44.3249 205.443 44.6086 206.099 44.8534C206.756 45.0871 207.457 45.2874 208.202 45.4543L211.273 46.1887C212.764 46.5225 214.133 46.9675 215.379 47.5239C216.625 48.0802 217.704 48.7645 218.617 49.5768C219.529 50.3891 220.236 51.346 220.737 52.4475C221.248 53.5491 221.51 54.812 221.521 56.2363C221.51 58.3281 220.976 60.1418 219.919 61.6773C218.873 63.2017 217.359 64.3867 215.379 65.2323C213.409 66.0669 211.034 66.4841 208.252 66.4841C205.493 66.4841 203.089 66.0613 201.042 65.2157C199.006 64.37 197.415 63.1182 196.268 61.4603C195.134 59.7913 194.538 57.7273 194.483 55.2682H201.476C201.554 56.4143 201.882 57.3712 202.461 58.1389C203.05 58.8956 203.835 59.4686 204.814 59.8581C205.804 60.2364 206.922 60.4255 208.169 60.4255C209.393 60.4255 210.455 60.2475 211.357 59.8914C212.269 59.5354 212.975 59.0402 213.476 58.406C213.977 57.7718 214.227 57.043 214.227 56.2196C214.227 55.4518 213.999 54.8064 213.543 54.2835C213.098 53.7605 212.441 53.3154 211.574 52.9483C210.717 52.5811 209.665 52.2473 208.419 51.9468L204.697 51.0122C201.815 50.3112 199.54 49.2152 197.871 47.7242C196.202 46.2332 195.373 44.2248 195.384 41.699C195.373 39.6294 195.924 37.8212 197.036 36.2746C198.16 34.728 199.701 33.5207 201.659 32.6528C203.618 31.7849 205.843 31.351 208.336 31.351C210.873 31.351 213.087 31.7849 214.978 32.6528C216.881 33.5207 218.361 34.728 219.418 36.2746C220.475 37.8212 221.02 39.6127 221.054 41.6489H214.127ZM225.08 37.7767V31.8183H253.153V37.7767H242.688V66.0001H235.545V37.7767H225.08ZM278.89 31.8183H286.117V54.0164C286.117 56.5089 285.521 58.6897 284.331 60.559C283.151 62.4284 281.499 63.886 279.374 64.9319C277.249 65.9667 274.773 66.4841 271.947 66.4841C269.109 66.4841 266.628 65.9667 264.503 64.9319C262.378 63.886 260.725 62.4284 259.546 60.559C258.366 58.6897 257.777 56.5089 257.777 54.0164V31.8183H265.003V53.3989C265.003 54.7007 265.287 55.8579 265.855 56.8705C266.433 57.883 267.246 58.6786 268.291 59.2572C269.337 59.8358 270.556 60.1251 271.947 60.1251C273.349 60.1251 274.567 59.8358 275.602 59.2572C276.648 58.6786 277.454 57.883 278.022 56.8705C278.601 55.8579 278.89 54.7007 278.89 53.3989V31.8183ZM304.18 66.0001H292.063V31.8183H304.28C307.718 31.8183 310.678 32.5026 313.159 33.8712C315.641 35.2287 317.549 37.1814 318.884 39.7295C320.23 42.2776 320.904 45.3263 320.904 48.8758C320.904 52.4364 320.23 55.4963 318.884 58.0555C317.549 60.6147 315.629 62.5786 313.126 63.9472C310.633 65.3158 307.651 66.0001 304.18 66.0001ZM299.29 59.808H303.879C306.016 59.808 307.813 59.4297 309.27 58.673C310.739 57.9053 311.841 56.7203 312.575 55.118C313.321 53.5046 313.693 51.4239 313.693 48.8758C313.693 46.35 313.321 44.286 312.575 42.6837C311.841 41.0814 310.745 39.902 309.287 39.1453C307.829 38.3887 306.032 38.0104 303.896 38.0104H299.29V59.808ZM333.484 31.8183V66.0001H326.257V31.8183H333.484ZM370.841 48.9092C370.841 52.6367 370.135 55.8079 368.721 58.4227C367.319 61.0375 365.406 63.0348 362.98 64.4145C360.565 65.7831 357.85 66.4674 354.835 66.4674C351.797 66.4674 349.071 65.7776 346.657 64.3978C344.242 63.0181 342.334 61.0208 340.932 58.406C339.53 55.7912 338.829 52.6256 338.829 48.9092C338.829 45.1817 339.53 42.0105 340.932 39.3957C342.334 36.7809 344.242 34.7892 346.657 33.4206C349.071 32.0408 351.797 31.351 354.835 31.351C357.85 31.351 360.565 32.0408 362.98 33.4206C365.406 34.7892 367.319 36.7809 368.721 39.3957C370.135 42.0105 370.841 45.1817 370.841 48.9092ZM363.514 48.9092C363.514 46.4947 363.152 44.4584 362.429 42.8005C361.717 41.1426 360.71 39.8853 359.408 39.0285C358.106 38.1717 356.582 37.7434 354.835 37.7434C353.088 37.7434 351.564 38.1717 350.262 39.0285C348.96 39.8853 347.948 41.1426 347.224 42.8005C346.512 44.4584 346.156 46.4947 346.156 48.9092C346.156 51.3237 346.512 53.3599 347.224 55.0179C347.948 56.6758 348.96 57.9331 350.262 58.7899C351.564 59.6466 353.088 60.075 354.835 60.075C356.582 60.075 358.106 59.6466 359.408 58.7899C360.71 57.9331 361.717 56.6758 362.429 55.0179C363.152 53.3599 363.514 51.3237 363.514 48.9092ZM394.737 41.6489C394.604 40.3025 394.031 39.2566 393.018 38.5111C392.006 37.7656 390.632 37.3929 388.896 37.3929C387.716 37.3929 386.721 37.5598 385.908 37.8936C385.096 38.2162 384.473 38.6669 384.039 39.2455C383.616 39.8241 383.405 40.4806 383.405 41.2149C383.382 41.8269 383.51 42.361 383.789 42.8172C384.078 43.2734 384.473 43.6684 384.974 44.0022C385.474 44.3249 386.053 44.6086 386.709 44.8534C387.366 45.0871 388.067 45.2874 388.812 45.4543L391.883 46.1887C393.374 46.5225 394.743 46.9675 395.989 47.5239C397.235 48.0802 398.315 48.7645 399.227 49.5768C400.14 50.3891 400.846 51.346 401.347 52.4475C401.859 53.5491 402.12 54.812 402.131 56.2363C402.12 58.3281 401.586 60.1418 400.529 61.6773C399.483 63.2017 397.97 64.3867 395.989 65.2323C394.02 66.0669 391.644 66.4841 388.862 66.4841C386.103 66.4841 383.7 66.0613 381.652 65.2157C379.616 64.37 378.025 63.1182 376.879 61.4603C375.744 59.7913 375.149 57.7273 375.093 55.2682H382.086C382.164 56.4143 382.492 57.3712 383.071 58.1389C383.661 58.8956 384.445 59.4686 385.424 59.8581C386.415 60.2364 387.533 60.4255 388.779 60.4255C390.003 60.4255 391.066 60.2475 391.967 59.8914C392.879 59.5354 393.586 59.0402 394.087 58.406C394.587 57.7718 394.838 57.043 394.838 56.2196C394.838 55.4518 394.61 54.8064 394.153 54.2835C393.708 53.7605 393.052 53.3154 392.184 52.9483C391.327 52.5811 390.276 52.2473 389.029 51.9468L385.307 51.0122C382.426 50.3112 380.15 49.2152 378.481 47.7242C376.812 46.2332 375.983 44.2248 375.994 41.699C375.983 39.6294 376.534 37.8212 377.647 36.2746C378.77 34.728 380.311 33.5207 382.27 32.6528C384.228 31.7849 386.454 31.351 388.946 31.351C391.483 31.351 393.697 31.7849 395.589 32.6528C397.491 33.5207 398.971 34.728 400.028 36.2746C401.085 37.8212 401.631 39.6127 401.664 41.6489H394.737Z"
+                        fill="white" />
                     <defs>
-                        <linearGradient id="paint0_linear_0_1" x1="4" y1="4" x2="93.086" y2="81.2081" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#22D3EE"/>
-                            <stop offset="1" stop-color="#A855F7"/>
+                        <linearGradient id="paint0_linear_0_1" x1="4" y1="4" x2="93.086" y2="81.2081"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#22D3EE" />
+                            <stop offset="1" stop-color="#A855F7" />
                         </linearGradient>
                     </defs>
                 </svg>
-            </div>
-            
+            </a>
+
             <div class="flex gap-4 items-center font-mono text-[10px] uppercase tracking-widest">
                 <div class="flex gap-2 text-gray-500 mr-2 border-r border-white/10 pr-4">
                     <span class="text-white font-bold cursor-default">[ ES ]</span>
-                    <button onclick="localStorage.setItem('preferred_lang', 'en'); window.location.href='en/terminos-y-condiciones.html';" class="hover:text-white transition-colors">[ EN ]</button>
+                    <button type="button"
+                        onclick="localStorage.setItem('preferred_lang', 'en'); window.location.href='en/terminos-y-condiciones.html';"
+                        class="hover:text-white transition-colors">[ EN ]</button>
                 </div>
-                
-                <button onclick="window.history.back()" class="text-gray-400 hover:text-white transition-colors">
+
+                <button type="button"
+                    onclick="if (window.history.length > 1) { window.history.back(); } else { window.location.href = 'index.html'; }"
+                    class="text-gray-400 hover:text-white transition-colors">
                     [ Volver ]
                 </button>
             </div>
@@ -94,91 +575,247 @@
 
     <main class="flex-grow pt-32 pb-24 px-6 relative z-10">
         <article class="max-w-2xl mx-auto">
-            
+
             <header class="mb-16 border-b border-white/10 pb-8">
                 <p class="font-mono text-xs text-brand-accent uppercase tracking-[0.2em] mb-4">Legal & Compliance</p>
-                <h1 class="text-4xl md:text-5xl font-black tracking-tight text-gradient mb-4">Términos y Condiciones Globales de Uso Corporativo</h1>
+                <h1 class="text-4xl md:text-5xl font-black tracking-tight text-gradient mb-4">Términos y Condiciones
+                    Globales de Uso Corporativo</h1>
                 <h2 class="text-xl text-white font-mono mb-8 font-bold">KAI STUDIOS, S.A.S.</h2>
                 <div class="flex flex-col md:flex-row md:items-center gap-4 text-sm text-gray-500 font-mono">
-                    <p>Última actualización: <span class="text-gray-300">21 de Agosto, 2025</span></p>
+                    <p>Última actualización: <span class="text-gray-300">Noviembre 2026</span></p>
                     <span class="hidden md:block">•</span>
                     <p>Documento ID: <span class="text-gray-300">KT-8492-AX</span></p>
                 </div>
             </header>
 
             <div class="space-y-10 text-gray-400 leading-relaxed font-light">
-                
+
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">1. ACEPTACIÓN INTEGRAL, EXPRESA Y VINCULANTE DE LOS TÉRMINOS CORPORATIVOS</h2>
-                    <p>Al acceder, navegar, leer, enlazar o utilizar de cualquier manera directa o indirecta el sitio web corporativo, subdominios, interfaces web o cualquier infraestructura digital asociada (colectivamente, el "Sitio Web") que sea propiedad, esté operada o controlada por KAI STUDIOS, S.A.S., una Sociedad por Acciones Simplificada legalmente constituida bajo las leyes de los Estados Unidos Mexicanos (en adelante, "KAI STUDIOS", la "Empresa Matriz", "nosotros" o "nuestro"), usted (en adelante, el "Visitante", "Usuario" o "Usted") confirma de manera afirmativa, irrevocable, incondicional y legalmente vinculante que ha leído detenidamente, entendido en su totalidad y aceptado someterse a la totalidad de estos Términos y Condiciones de Uso Corporativo ("Términos Corporativos"). Si usted actúa en nombre y representación de una entidad legal, fondo de inversión, corporación o medio de comunicación, declara y garantiza bajo pena de perjurio que posee la autoridad legal documentada y vigente para vincular a dicha entidad a estos Términos Corporativos. Si no está de acuerdo con una sola cláusula, disposición, apartado o limitación de este documento, tiene estrictamente prohibido el uso de nuestro Sitio Web y debe abandonar este dominio de manera inmediata y definitiva.</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">1. ACEPTACIÓN INTEGRAL, EXPRESA Y VINCULANTE
+                        DE LOS TÉRMINOS CORPORATIVOS</h2>
+                    <p>Al acceder, navegar, leer, enlazar o utilizar de cualquier manera directa o indirecta el sitio
+                        web corporativo, subdominios, formularios de contacto, interfaces web o cualquier
+                        infraestructura digital asociada (colectivamente, el "Sitio Web") que sea propiedad, esté
+                        operada o controlada por KAI STUDIOS, S.A.S., una Sociedad por Acciones Simplificada legalmente
+                        constituida bajo las leyes de los Estados Unidos Mexicanos (en adelante, "KAI STUDIOS", la
+                        "Empresa Matriz", "nosotros" o "nuestro"), usted (en adelante, el "Visitante", "Usuario" o
+                        "Usted") confirma de manera afirmativa, irrevocable, incondicional y legalmente vinculante que
+                        ha leído detenidamente, entendido en su totalidad y aceptado someterse a la totalidad de estos
+                        Términos y Condiciones de Uso Corporativo ("Términos Corporativos"). Si usted actúa en nombre y
+                        representación de una entidad legal, fondo de inversión, corporación o medio de comunicación,
+                        declara y garantiza bajo protesta de decir verdad que posee la autoridad legal documentada y
+                        vigente para vincular a dicha entidad a estos Términos Corporativos. Si no está de acuerdo con
+                        cualquier cláusula, disposición o limitación de este documento, tiene estrictamente prohibido el
+                        uso de nuestro Sitio Web y debe abandonar este dominio de manera inmediata.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">2. IDENTIDAD CORPORATIVA, NATURALEZA DEL SITIO WEB Y AUSENCIA DE OFERTAS VINCULANTES</h2>
-                    <p class="mb-4">KAI STUDIOS, S.A.S. es una empresa holding de base tecnológica y un estudio de desarrollo de software dedicado a la creación de soluciones digitales avanzadas, ecosistemas de bienestar holístico y arquitecturas de inteligencia artificial. El propósito único y exclusivo de este Sitio Web es fungir como una plataforma de información corporativa (Landing Page), escaparate de relaciones públicas y portafolio de propiedad intelectual.</p>
-                    <p><strong>Ausencia de Ofertas (Safe Harbor):</strong> El Visitante reconoce y acepta expresamente que ninguna información, declaración de misión, visión a futuro, hoja de ruta (roadmap), descripción de metodologías (incluyendo referencias a la Filosofía Estoica o Terapia Cognitivo-Conductual), o material multimedia publicado en este Sitio Web constituye una oferta vinculante de servicios, una promesa comercial exigible legalmente, una oferta de venta de valores, una solicitud de inversión, ni una garantía de rendimiento de las aplicaciones presentes o futuras. Las declaraciones prospectivas sobre el desarrollo de nuestro software, incluyendo referencias a nuestra aplicación "CaloriTrack", están sujetas a riesgos, incertidumbres y cambios drásticos sin previo aviso.</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">2. IDENTIDAD CORPORATIVA, NATURALEZA DEL
+                        SITIO WEB Y AUSENCIA DE OFERTAS VINCULANTES</h2>
+                    <p class="mb-4">KAI STUDIOS, S.A.S. es una firma tecnológica, estudio de ingeniería de software de
+                        automatización empresarial con Agentes de Inteligencia Artificial y Venture Studio (a través de
+                        su división KAI Labs) dedicado a la creación de soluciones digitales avanzadas y productos
+                        propios de cero fricción. El propósito de este Sitio Web es fungir como plataforma de
+                        información corporativa, canal de contacto comercial para diagnósticos empresariales y
+                        escaparate de nuestro portafolio de propiedad intelectual.</p>
+                    <p><strong>Ausencia de Ofertas Vinculantes (Safe Harbor):</strong> El Visitante reconoce y acepta
+                        expresamente que ninguna información, caso de uso ilustrativo, métrica de referencia,
+                        declaración de misión, hoja de ruta (roadmap) o material multimedia publicado en este Sitio Web
+                        constituye por sí mismo una oferta contractual vinculante, una promesa comercial exigible sin un
+                        contrato de prestación de servicios debidamente firmado, una oferta de venta de valores, ni una
+                        solicitud de inversión. Las declaraciones prospectivas sobre nuestras soluciones empresariales y
+                        sobre las aplicaciones de nuestro portafolio —incluyendo "AskKibo", "CaloriTrack" y "HitEra"—
+                        están sujetas a mejoras continuas, evoluciones técnicas y cambios sin previo aviso.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">3. MURO CORTAFUEGOS LEGAL Y SEPARACIÓN ESTRICTA DE SERVICIOS (CORPORATE SHIELD)</h2>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">3. MURO CORTAFUEGOS LEGAL Y SEPARACIÓN
+                        ESTRICTA DE SERVICIOS (CORPORATE SHIELD)</h2>
                     <div class="bg-brand-gray/50 border border-white/5 p-6 rounded-2xl mb-4 text-sm">
-                        <p class="text-gray-300"><strong>ESTA ES UNA CLÁUSULA FUNDAMENTAL DE EXENCIÓN DE RESPONSABILIDAD.</strong> KAI STUDIOS, S.A.S. opera como la entidad matriz y titular de los derechos de propiedad intelectual, pero el presente Sitio Web corporativo NO es una aplicación de salud, nutrición o bienestar.</p>
+                        <p class="text-gray-300"><strong>CLÁUSULA FUNDAMENTAL DE EXENCIÓN DE RESPONSABILIDAD:</strong>
+                            KAI STUDIOS, S.A.S. opera como la entidad matriz y titular de los derechos de propiedad
+                            intelectual, pero el presente Sitio Web corporativo es estrictamente informativo y NO presta
+                            servicios médicos, financieros, bancarios ni de asesoría legal.</p>
                     </div>
-                    <p>El Visitante comprende, reconoce y acepta sin reservas que la navegación por este Sitio Web es un acto meramente informativo. KAI STUDIOS, S.A.S., a través de este portal web, NO BRINDA, NO OFRECE Y NO PRETENDE PROPORCIONAR CONSEJOS MÉDICOS, DIAGNÓSTICOS CLÍNICOS, TERAPIAS PSICOLÓGICAS, NI PAUTAS NUTRICIONALES. Cualquier información leída en este Sitio Web relacionada con el ritmo circadiano, la variabilidad de frecuencia cardíaca (VFC), el ayuno prolongado, la restricción calórica, los antinutrientes o el biohacking es estrictamente para fines ilustrativos sobre los productos que la Empresa Matriz desarrolla. Usted renuncia expresamente a cualquier derecho de demandar a KAI STUDIOS, S.A.S. por lesiones personales, daños metabólicos, angustia emocional o deterioro de la salud mental derivados de la malinterpretación de la información corporativa contenida en este dominio web.</p>
+                    <p>El Visitante comprende y acepta sin reservas que la navegación por este Sitio Web es un acto
+                        meramente informativo. KAI STUDIOS, S.A.S., a través de este portal web, NO BRINDA CONSEJOS
+                        MÉDICOS, DIAGNÓSTICOS CLÍNICOS, PAUTAS NUTRICIONALES, ASESORÍA FINANCIERA, CONTABLE, BANCARIA NI
+                        JURÍDICA. Cualquier descripción en este Sitio Web relacionada con la automatización de procesos
+                        empresariales, el registro conversacional de gastos ("AskKibo"), el bienestar físico, mental,
+                        sueño o nutrición ("CaloriTrack"), o el entretenimiento musical interactivo ("HitEra") tiene
+                        fines estrictamente ilustrativos sobre la tecnología que la Empresa Matriz desarrolla. Usted
+                        renuncia expresamente a cualquier derecho de reclamar o demandar a KAI STUDIOS, S.A.S. por
+                        decisiones comerciales, financieras, de salud o personales tomadas a partir de la interpretación
+                        de la información general contenida en este dominio web.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">4. CLÁUSULA DE INTERSECCIÓN Y PLATAFORMAS SUBSIDIARIAS (APLICACIÓN "CALORITRACK")</h2>
-                    <p class="mb-4">KAI STUDIOS, S.A.S. es la creadora, desarrolladora y operadora exclusiva de la aplicación móvil de salud integral denominada "CaloriTrack" y sus ecosistemas asociados (como el AI Coach "Kai"). No obstante, el Visitante acepta de manera ineludible que:</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">4. CLÁUSULA DE INTERSECCIÓN Y PLATAFORMAS
+                        SUBSIDIARIAS (PORTAFOLIO KAI LABS)</h2>
+                    <p class="mb-4">KAI STUDIOS, S.A.S. es la creadora, desarrolladora y operadora de las plataformas y
+                        aplicaciones propietarias exhibidas en su división KAI Labs, incluyendo de manera enunciativa
+                        más no limitativa: el asistente financiero conversacional <strong>"AskKibo"</strong>
+                        (`askkibo.com`), el ecosistema de bienestar integral <strong>"CaloriTrack"</strong>
+                        (`caloritrack.com` y su AI Coach "Kai") y la plataforma multijugador de entretenimiento musical
+                        <strong>"HitEra"</strong> (`hitera.app`). No obstante, el Visitante acepta de manera ineludible
+                        que:</p>
                     <ul class="list-disc pl-5 space-y-4 mb-4">
-                        <li>La descarga, registro, acceso, compra de suscripciones y uso material de cualquier software, plataforma, ecosistema o aplicación móvil desarrollada bajo el amparo de KAI STUDIOS, S.A.S. (incluyendo explícita y destacadamente la aplicación "CaloriTrack") se rige total, absoluta y exclusivamente por los Contratos de Licencia de Usuario Final (EULA), Términos y Condiciones de Uso específicos, Avisos Médicos Exhaustivos y Políticas de Privacidad que están integrados nativamente dentro de cada producto individual.</li>
-                        <li>El presente documento no altera, no sustituye, no mitiga y no reemplaza las condiciones, descargos de responsabilidad médica y acuerdos de arbitraje vinculantes que el usuario final debe aceptar independientemente al instalar y utilizar nuestras aplicaciones subsidiarias.</li>
+                        <li>El acceso, registro, descarga, compra de pases o suscripciones y uso material de cualquier
+                            software, plataforma web progresiva (PWA), agente conversacional o aplicación móvil
+                            desarrollada bajo el amparo de KAI STUDIOS, S.A.S., así como la contratación de servicios
+                            empresariales B2B, se rige total, absoluta y exclusivamente por los Contratos de Prestación
+                            de Servicios, Contratos de Licencia de Usuario Final (EULA), Términos y Condiciones de Uso
+                            específicos, Avisos de Privacidad y Descargos de Responsabilidad que están integrados de
+                            forma nativa dentro de cada producto o contrato individual.</li>
+                        <li>El presente documento corporativo no altera, no sustituye, no mitiga y no reemplaza las
+                            condiciones específicas, límites de responsabilidad ni acuerdos aplicables que el usuario
+                            final o cliente corporativo debe aceptar de forma independiente al utilizar cada una de
+                            nuestras plataformas subsidiarias.</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">5. TITULARIDAD SUPREMA DE LA PROPIEDAD INTELECTUAL E INDUSTRIAL</h2>
-                    <p class="mb-4">Toda la arquitectura del Sitio Web, su código fuente (HTML, CSS, JavaScript, PHP), modelo de datos, interfaces de usuario (UI), recorridos y experiencias de usuario (UX), la marca comercial nominativa e innominada "KAI STUDIOS" y "CaloriTrack", los logotipos asociados, paletas de colores representativas (trade dress), íconos propietarios, gráficos personalizados, y de manera muy especial, las descripciones de la lógica procedimental y el algoritmo conversacional del AI Coach (Kai) fundamentado en paralelismos con la Terapia Cognitivo-Conductual, son y seguirán siendo en todo momento propiedad exclusiva, protegida y registrada internacionalmente de KAI STUDIOS, S.A.S.</p>
-                    <p>Bajo ninguna circunstancia se le otorga al Visitante licencia alguna sobre estos activos. Queda terminante, estrictamente y legalmente prohibido: (a) copiar, reproducir, modificar, crear trabajos derivados, o explotar comercialmente cualquier parte de este Sitio Web; (b) utilizar software automatizado de raspado de datos ("web scraping"), arañas de red (spiders), bots, o extractores de texto para capturar masivamente la información de este dominio con el fin de entrenar Modelos de Lenguaje Grande (LLMs) u otras Inteligencias Artificiales de terceros; (c) realizar ingeniería inversa o intentar descubrir la infraestructura subyacente del servidor. El incumplimiento de esta cláusula dará lugar a las acciones civiles, penales y mercantiles más severas disponibles, buscando medidas cautelares inmediatas y reparaciones económicas punitivas sin necesidad de fianza.</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">5. TITULARIDAD SUPREMA DE LA PROPIEDAD
+                        INTELECTUAL E INDUSTRIAL</h2>
+                    <p class="mb-4">Toda la arquitectura del Sitio Web, su código fuente (HTML, CSS, JavaScript,
+                        TypeScript, PHP), modelos de datos, interfaces de usuario (UI), experiencias de usuario (UX),
+                        las marcas comerciales nominativas e innominadas <strong>"KAI STUDIOS"</strong>, <strong>"KAI
+                            Labs"</strong>, <strong>"AskKibo"</strong>, <strong>"KiboSplit"</strong>,
+                        <strong>"CaloriTrack"</strong> y <strong>"HitEra"</strong>, los logotipos asociados, sistemas de
+                        diseño propietarios (incluyendo la estética <em>D-Synth / Tactile Synthwave</em>), íconos,
+                        gráficos personalizados y las arquitecturas de nuestros Agentes de Inteligencia Artificial son y
+                        seguirán siendo en todo momento propiedad exclusiva y protegida de KAI STUDIOS, S.A.S.</p>
+                    <p>Bajo ninguna circunstancia se le otorga al Visitante licencia alguna sobre estos activos. Queda
+                        estricta y legalmente prohibido: (a) copiar, reproducir, modificar, crear trabajos derivados o
+                        explotar comercialmente cualquier parte de este Sitio Web; (b) utilizar software automatizado de
+                        extracción de datos ("web scraping"), arañas de red (spiders), bots o extractores de texto para
+                        capturar información de este dominio con el fin de entrenar Modelos de Lenguaje Grande (LLMs) u
+                        otras Inteligencias Artificiales de terceros; (c) realizar ingeniería inversa o intentar
+                        vulnerar la infraestructura subyacente del servidor. El incumplimiento de esta cláusula dará
+                        lugar a las acciones civiles, penales y mercantiles correspondientes.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">6. DESCARGO DE RESPONSABILIDAD DE SEGURIDAD WEB, CONTINUIDAD Y ENLACES EXTERNOS</h2>
-                    <p class="mb-4">El Sitio Web corporativo de KAI STUDIOS se proporciona estrictamente "TAL CUAL" ("AS IS") y "SEGÚN DISPONIBILIDAD" ("AS AVAILABLE"), con todos sus posibles fallos.</p>
-                    <p class="mb-4">Nos reservamos el derecho incondicional y unilateral de modificar, suspender temporalmente o eliminar definitivamente este Sitio Web en cualquier momento y sin previo aviso. KAI STUDIOS, S.A.S. no garantiza de ninguna manera que el Sitio Web estará libre de interrupciones, latencia, errores informáticos, virus, ransomware, caballos de Troya, ataques de denegación de servicio distribuido (DDoS) u otros componentes maliciosos, a pesar de las medidas de seguridad perimetral (CDN/WAF) que podamos implementar.</p>
-                    <p>El Sitio Web puede contener enlaces de hipertexto a plataformas de terceros (como Apple App Store, Garmin Connect, Spotify, Amazon o repositorios científicos externos como PubMed). KAI STUDIOS, S.A.S. no ejerce control alguno sobre dichos dominios externos y renuncia expresamente a toda responsabilidad por sus contenidos, políticas de privacidad, o por cualquier daño cibernético, pérdida de datos o perjuicio patrimonial que usted pueda sufrir al abandonar nuestro dominio y navegar hacia dichas integraciones de terceros.</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">6. DESCARGO DE RESPONSABILIDAD DE SEGURIDAD
+                        WEB, CONTINUIDAD Y ENLACES EXTERNOS</h2>
+                    <p class="mb-4">El Sitio Web corporativo de KAI STUDIOS se proporciona estrictamente "TAL CUAL" ("AS
+                        IS") y "SEGÚN DISPONIBILIDAD" ("AS AVAILABLE").</p>
+                    <p class="mb-4">Nos reservamos el derecho unilateral de modificar, actualizar, suspender
+                        temporalmente o retirar secciones de este Sitio Web en cualquier momento y sin previo aviso. KAI
+                        STUDIOS, S.A.S. no garantiza que el Sitio Web estará libre de interrupciones, latencia o
+                        incidencias técnicas ajenas a nuestro control, a pesar de las medidas de seguridad perimetral
+                        (CDN/WAF) y cifrado que implementamos.</p>
+                    <p>El Sitio Web puede contener enlaces hacia dominios de nuestros productos propios o plataformas de
+                        terceros (tales como WhatsApp, Apple App Store, Apple Music, Spotify, Stripe u otros proveedores
+                        tecnológicos). KAI STUDIOS, S.A.S. no ejerce control sobre la infraestructura de plataformas de
+                        terceros y deslinda toda responsabilidad por sus contenidos, políticas de privacidad o
+                        disponibilidad técnica.</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">7. LIMITACIÓN MÁXIMA Y CATEGÓRICA DE RESPONSABILIDAD CIVIL</h2>
-                    <p class="text-sm tracking-wide leading-relaxed font-semibold text-gray-300">BAJO NINGUNA CIRCUNSTANCIA TEÓRICA O DOCTRINA LEGAL —YA SEA BASADA EN RESPONSABILIDAD CONTRACTUAL, RESPONSABILIDAD EXTRACONTRACTUAL, NEGLIGENCIA, RESPONSABILIDAD OBJETIVA U OTRA CAUSA DE ACCIÓN— KAI STUDIOS, S.A.S., SUS FUNDADORES, ACCIONISTAS, DIRECTIVOS, EMPLEADOS O AGENTES, SERÁN RESPONSABLES ANTE USTED O ANTE NINGÚN TERCERO POR DAÑOS O PERJUICIOS DIRECTOS, INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O PUNITIVOS DERIVADOS DEL ACCESO, USO O LA INCAPACIDAD DE USO DE ESTE SITIO WEB CORPORATIVO. ESTO INCLUYE, SIN LIMITACIÓN, LA PÉRDIDA DE BENEFICIOS, INTERRUPCIÓN DEL NEGOCIO, CORRUPCIÓN DE DATOS O DAÑOS A SU HARDWARE INFORMÁTICO. EN LAS JURISDICCIONES DONDE LA EXCLUSIÓN ABSOLUTA NO ESTÉ PERMITIDA, LA RESPONSABILIDAD TOTAL Y ACUMULATIVA DE KAI STUDIOS, S.A.S. QUEDARÁ ESTRICTAMENTE LIMITADA A LA CANTIDAD MÁXIMA DE DIEZ DÓLARES ESTADOUNIDENSES ($10.00 USD).</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">7. LIMITACIÓN MÁXIMA Y CATEGÓRICA DE
+                        RESPONSABILIDAD CIVIL</h2>
+                    <p class="text-sm tracking-wide leading-relaxed font-semibold text-gray-300">BAJO NINGUNA
+                        CIRCUNSTANCIA TEÓRICA O DOCTRINA LEGAL —YA SEA BASADA EN RESPONSABILIDAD CONTRACTUAL,
+                        RESPONSABILIDAD EXTRACONTRACTUAL, NEGLIGENCIA, RESPONSABILIDAD OBJETIVA U OTRA CAUSA DE ACCIÓN—
+                        KAI STUDIOS, S.A.S., SUS FUNDADORES, ACCIONISTAS, DIRECTIVOS, EMPLEADOS O AGENTES, SERÁN
+                        RESPONSABLES ANTE USTED O ANTE NINGÚN TERCERO POR DAÑOS O PERJUICIOS DIRECTOS, INDIRECTOS,
+                        INCIDENTALES, ESPECIALES, CONSECUENTES O PUNITIVOS DERIVADOS DEL ACCESO, USO O LA INCAPACIDAD DE
+                        USO DE ESTE SITIO WEB CORPORATIVO. ESTO INCLUYE, SIN LIMITACIÓN, LA PÉRDIDA DE BENEFICIOS,
+                        INTERRUPCIÓN DEL NEGOCIO, CORRUPCIÓN DE DATOS O DAÑOS A SU HARDWARE INFORMÁTICO. EN LAS
+                        JURISDICCIONES DONDE LA EXCLUSIÓN ABSOLUTA NO ESTÉ PERMITIDA, LA RESPONSABILIDAD TOTAL Y
+                        ACUMULATIVA DE KAI STUDIOS, S.A.S. QUEDARÁ ESTRICTAMENTE LIMITADA A LA CANTIDAD MÁXIMA DE DIEZ
+                        DÓLARES ESTADOUNIDENSES ($10.00 USD).</p>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">8. LEY APLICABLE Y JURISDICCIÓN BIFURCADA (ESTRATEGIA GLOBAL Y LOCAL)</h2>
-                    <p class="mb-4">Reconociendo que KAI STUDIOS, S.A.S. es una corporación constituida bajo las leyes de México que opera en un entorno digital global, la aplicabilidad de las leyes y la jurisdicción para la resolución de cualquier disputa originada exclusivamente por el uso de esta landing page se determinará de forma excluyente bajo las siguientes dos vías:</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">8. LEY APLICABLE Y JURISDICCIÓN BIFURCADA
+                        (ESTRATEGIA GLOBAL Y LOCAL)</h2>
+                    <p class="mb-4">Reconociendo que KAI STUDIOS, S.A.S. es una sociedad constituida bajo las leyes de
+                        México que opera en un entorno digital global, la aplicabilidad de las leyes y la jurisdicción
+                        para la resolución de cualquier controversia originada exclusivamente por el uso de este Sitio
+                        Web se determinará bajo las siguientes dos vías:</p>
                     <ul class="list-none space-y-4 mb-4">
-                        <li><strong>A) Para Visitantes residentes fuera de los Estados Unidos Mexicanos (EE. UU., Canadá, UE, etc.):</strong> Cualquier disputa, controversia o reclamación se regirá única, exclusiva y exhaustivamente por las leyes del Estado de Delaware, Estados Unidos de América, excluyendo sus principios de conflicto de leyes. Usted acepta someterse a la jurisdicción exclusiva de los tribunales estatales o federales ubicados en el Condado de New Castle, Delaware, renunciando expresamente a litigios mediante demandas colectivas (Class Action Waiver).</li>
-                        <li><strong>B) Para Visitantes residentes en los Estados Unidos Mexicanos:</strong> Con el propósito de cumplir cabalmente con la normatividad local aplicable, estos Términos se interpretarán y ejecutarán conforme a las leyes federales de México. Las partes se someten de forma irrevocable a la competencia y jurisdicción exclusiva de los tribunales competentes radicados en la Ciudad de México (o en la jurisdicción registral del domicilio social de la Empresa), renunciando expresa e irrevocablemente a cualquier otro fuero que pudiera corresponderles.</li>
+                        <li><strong>A) Para Visitantes residentes fuera de los Estados Unidos Mexicanos (EE. UU.,
+                                Canadá, UE, etc.):</strong> Cualquier disputa, controversia o reclamación se regirá
+                            única y exclusivamente por las leyes del Estado de Delaware, Estados Unidos de América,
+                            excluyendo sus principios de conflicto de leyes. Usted acepta someterse a la jurisdicción
+                            exclusiva de los tribunales estatales o federales ubicados en el Condado de New Castle,
+                            Delaware, renunciando expresamente a litigios mediante demandas colectivas (Class Action
+                            Waiver).</li>
+                        <li><strong>B) Para Visitantes residentes en los Estados Unidos Mexicanos:</strong> Con el
+                            propósito de cumplir cabalmente con la normatividad local aplicable, estos Términos se
+                            interpretarán y ejecutarán conforme a las leyes federales de México. Las partes se someten
+                            de forma irrevocable a la jurisdicción exclusiva de los tribunales competentes radicados en
+                            la Ciudad de México (o en la jurisdicción registral del domicilio social de la Empresa),
+                            renunciando expresa e irrevocablemente a cualquier otro fuero que pudiera corresponderles
+                            por razón de sus domicilios presentes o futuros.</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2 class="text-xl font-mono font-bold text-white mb-4">9. REFORMAS UNILATERALES Y DIVISIBILIDAD DEL ACUERDO</h2>
-                    <p>KAI STUDIOS, S.A.S. se reserva la prerrogativa legal perenne e inalienable de revisar, enmendar o sustituir íntegramente estos Términos Corporativos en cualquier momento, sin obligación de notificación previa, mediante la simple publicación de la versión actualizada en este dominio. El uso continuado del Sitio Web tras cualquier modificación constituirá su aceptación irrevocable de los nuevos términos. Si cualquier tribunal competente determina que alguna disposición de estos Términos Corporativos es ilegal, nula o inaplicable, dicha disposición será considerada divisible y eliminada quirúrgicamente, sin que ello afecte en lo absoluto la validez, legalidad y vigor coercitivo del resto del contrato (Doctrina de Severability).</p>
+                    <h2 class="text-xl font-mono font-bold text-white mb-4">9. REFORMAS UNILATERALES Y DIVISIBILIDAD DEL
+                        ACUERDO</h2>
+                    <p>KAI STUDIOS, S.A.S. se reserva la prerrogativa legal de revisar, enmendar o actualizar estos
+                        Términos Corporativos en cualquier momento mediante la publicación de la versión vigente en este
+                        dominio. El uso continuado del Sitio Web tras cualquier modificación constituirá su aceptación
+                        de los nuevos términos. Si cualquier tribunal competente determina que alguna disposición de
+                        estos Términos Corporativos es nula o inaplicable, dicha disposición será considerada divisible
+                        sin afectar en lo absoluto la validez, legalidad y vigor del resto del acuerdo (Doctrina de
+                        Divisibilidad / Severability).</p>
                 </section>
 
                 <section>
                     <h2 class="text-xl font-mono font-bold text-white mb-4">10. DATOS DE CONTACTO LEGAL OFICIAL</h2>
-                    <p class="mb-4">Para notificaciones legales formales, asuntos de cumplimiento normativo, reportes de infracción de Propiedad Intelectual o cuestiones relacionadas estrictamente con KAI STUDIOS, S.A.S., el único canal de comunicación oficial, exclusivo y con validez jurídica probatoria es el siguiente correo electrónico institucional:</p>
+                    <p class="mb-4">Para notificaciones legales formales, asuntos de cumplimiento normativo, reportes de
+                        Propiedad Intelectual o cuestiones relacionadas estrictamente con KAI STUDIOS, S.A.S., el único
+                        canal de comunicación oficial y con validez jurídica probatoria es el siguiente correo
+                        electrónico institucional:</p>
                     <div class="bg-brand-gray/50 border border-white/5 p-4 rounded-xl mb-4 inline-block">
-                        <p class="text-white font-mono text-sm"><strong>Departamento Legal y Cumplimiento Normativo:</strong> <a href="mailto:legal@kai-studios.com" class="text-brand-accent hover:underline">legal@kai-studios.com</a></p>
+                        <p class="text-white font-mono text-sm"><strong>Departamento Legal y Cumplimiento
+                                Normativo:</strong> <a href="mailto:legal@kai-studios.com"
+                                class="text-brand-accent hover:underline">legal@kai-studios.com</a></p>
                     </div>
-                    <p>Cualquier notificación enviada a través de redes sociales, foros públicos o medios distintos al correo electrónico designado será considerada como legalmente nula y no recibida.</p>
+                    <p>Cualquier notificación enviada a través de redes sociales, foros públicos o medios distintos al
+                        correo electrónico designado será considerada como legalmente no recibida.</p>
                 </section>
 
             </div>
         </article>
     </main>
+
+    <!-- Footer Corporativo Homologado -->
+    <footer class="w-full py-12 border-t border-white/5 relative z-10 bg-black">
+        <div
+            class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+            <div>
+                <p class="font-mono text-[10px] text-gray-500 uppercase tracking-widest">
+                    &copy; <span id="year"></span> Kai Studios. Todos los derechos reservados.
+                </p>
+            </div>
+
+            <div class="flex flex-row gap-12 font-mono text-[10px] uppercase tracking-widest">
+                <div class="flex flex-col gap-4">
+                    <strong class="text-white/40">Compañía</strong>
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Inicio</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <strong class="text-white/40">KAI Labs</strong>
+                    <a href="https://askkibo.com" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-green-400 transition-colors">AskKibo</a>
+                    <a href="https://caloritrack.com" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors">CaloriTrack</a>
+                    <a href="https://hitera.app" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-pink-400 transition-colors">HitEra</a>
+                    <a href="labs.html" class="text-gray-400 hover:text-purple-400 transition-colors">Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>

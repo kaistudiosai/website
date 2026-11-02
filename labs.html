@@ -9,22 +9,22 @@
 
     <!-- SEO & Executive Open Graph -->
     <meta name="description"
-        content="Explora KAI Labs, el estudio de innovación de KAI Studios. Descubre AskKibo (asistente financiero por IA en WhatsApp) y CaloriTrack (ecosistema de bienestar para iOS y Apple Watch).">
+        content="Explora KAI Labs, el estudio de innovación de KAI Studios. Descubre AskKibo (asistente financiero en WhatsApp), CaloriTrack (bienestar con IA para iOS) y HitEra (juego musical multijugador en tiempo real).">
     <meta name="keywords"
-        content="KAI Labs, AskKibo, CaloriTrack, IA Conversacional, Aplicaciones de Inteligencia Artificial, KiboSplit, Venture Studio">
+        content="KAI Labs, AskKibo, CaloriTrack, HitEra, hitera.app, IA Conversacional, Aplicaciones de Inteligencia Artificial, KiboSplit, Venture Studio">
     <link rel="canonical" href="https://kai-studios.com/labs.html">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KAI Studios">
     <meta property="og:title" content="KAI Labs | Productos Propios de Cero Fricción">
     <meta property="og:description"
-        content="Descubre cómo aplicamos nuestra propia ingeniería de Inteligencia Artificial en productos reales como AskKibo y CaloriTrack.">
+        content="Descubre cómo aplicamos nuestra propia ingeniería en productos reales: AskKibo, CaloriTrack y HitEra.">
     <meta property="og:url" content="https://kai-studios.com/labs.html">
     <meta property="og:locale" content="es_MX">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="KAI Labs | Innovación y Productos Propios">
     <meta name="twitter:description"
-        content="Tecnología creada en casa para eliminar la fricción entre las personas y la Inteligencia Artificial.">
+        content="Tecnología creada en casa para eliminar la fricción: AskKibo, CaloriTrack y HitEra.">
 
     <link rel="alternate" hreflang="x-default" href="https://kai-studios.com/labs.html" />
     <link rel="alternate" hreflang="en" href="https://kai-studios.com/en/labs.html" />
@@ -137,7 +137,7 @@
             background: #404040;
         }
 
-        /* Fondos acelerados por GPU (Sustituye feTurbulence y blur-120px para 60fps en iOS) */
+        /* Fondos acelerados por GPU (60fps en iOS) */
         .bg-grid-pattern {
             background-size: 48px 48px;
             background-image:
@@ -240,6 +240,24 @@
             }
         }
 
+        @keyframes spinVinyl {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes eqBar {
+
+            0%,
+            100% {
+                transform: scaleY(0.3);
+            }
+
+            50% {
+                transform: scaleY(1);
+            }
+        }
+
         .animate-fade-in-up {
             animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
@@ -264,6 +282,30 @@
             --offset-start: 28;
             --offset-mid: 10;
             animation: ringBreath 3.5s ease-in-out infinite 1.2s;
+        }
+
+        .vinyl-spin {
+            animation: spinVinyl 9s linear infinite;
+        }
+
+        .eq-bar-1 {
+            transform-origin: bottom;
+            animation: eqBar 0.9s ease-in-out infinite;
+        }
+
+        .eq-bar-2 {
+            transform-origin: bottom;
+            animation: eqBar 1.2s ease-in-out infinite 0.2s;
+        }
+
+        .eq-bar-3 {
+            transform-origin: bottom;
+            animation: eqBar 0.75s ease-in-out infinite 0.4s;
+        }
+
+        .eq-bar-4 {
+            transform-origin: bottom;
+            animation: eqBar 1.1s ease-in-out infinite 0.15s;
         }
 
         /* Efecto Reveal Progresivo */
@@ -291,6 +333,18 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+        }
+
+        /* Estilos D-Synth exclusivos para HitEra */
+        .synth-gradient {
+            background: linear-gradient(135deg, #FF2A7A 0%, #FF8A00 100%);
+        }
+
+        .album-paper-card {
+            background-color: #FAF6F0;
+            color: #141024;
+            border: 1px solid rgba(20, 16, 36, 0.12);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
         }
 
         .glass-panel {
@@ -342,6 +396,13 @@
             left: 0;
         }
 
+        .inset-3 {
+            top: 0.75rem;
+            right: 0.75rem;
+            bottom: 0.75rem;
+            left: 0.75rem;
+        }
+
         .top-0 {
             top: 0;
         }
@@ -390,8 +451,16 @@
             width: auto;
         }
 
+        .w-1 {
+            width: 0.25rem;
+        }
+
         .w-2 {
             width: 0.5rem;
+        }
+
+        .w-3 {
+            width: 0.75rem;
         }
 
         .w-4 {
@@ -410,6 +479,10 @@
             width: 4rem;
         }
 
+        .w-24 {
+            width: 6rem;
+        }
+
         .w-48 {
             width: 12rem;
         }
@@ -422,8 +495,16 @@
             height: 0.5rem;
         }
 
+        .h-3 {
+            height: 0.75rem;
+        }
+
         .h-4 {
             height: 1rem;
+        }
+
+        .h-5 {
+            height: 1.25rem;
         }
 
         .h-6 {
@@ -436,6 +517,10 @@
 
         .h-16 {
             height: 4rem;
+        }
+
+        .h-24 {
+            height: 6rem;
         }
 
         .h-48 {
@@ -507,12 +592,24 @@
             flex-direction: row;
         }
 
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-1 {
+            flex: 1 1 0%;
+        }
+
         .flex-shrink-0 {
             flex-shrink: 0;
         }
 
         .items-start {
             align-items: flex-start;
+        }
+
+        .items-end {
+            align-items: flex-end;
         }
 
         .items-center {
@@ -533,6 +630,10 @@
 
         .justify-between {
             justify-content: space-between;
+        }
+
+        .gap-1 {
+            gap: 0.25rem;
         }
 
         .gap-2 {
@@ -571,12 +672,25 @@
             margin-top: 1.5rem;
         }
 
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-5 {
+            padding: 1.25rem;
+        }
+
         .p-8 {
             padding: 2rem;
         }
 
         .p-12 {
             padding: 3rem;
+        }
+
+        .px-2\.5 {
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
         }
 
         .px-3 {
@@ -655,12 +769,20 @@
             padding-left: 1rem;
         }
 
+        .mt-0\.5 {
+            margin-top: 0.125rem;
+        }
+
         .mt-1 {
             margin-top: 0.25rem;
         }
 
         .mb-1 {
             margin-bottom: 0.25rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
         }
 
         .mb-4 {
@@ -679,8 +801,12 @@
             margin-bottom: 2.5rem;
         }
 
-        .rounded-full {
-            border-radius: 9999px;
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
         }
 
         .rounded-2xl {
@@ -689,6 +815,10 @@
 
         .rounded-3xl {
             border-radius: 1.5rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
         }
 
         .rounded-tr-sm {
@@ -701,6 +831,10 @@
 
         .border {
             border-width: 1px;
+        }
+
+        .border-2 {
+            border-width: 2px;
         }
 
         .border-t {
@@ -743,8 +877,32 @@
             border-color: rgba(6, 182, 212, 0.22);
         }
 
+        .border-cyan-400\/40 {
+            border-color: rgba(34, 211, 238, 0.4);
+        }
+
+        .border-pink-500\/20 {
+            border-color: rgba(236, 72, 153, 0.24);
+        }
+
+        .border-pink-500\/30 {
+            border-color: rgba(236, 72, 153, 0.35);
+        }
+
+        .border-amber-400\/30 {
+            border-color: rgba(251, 191, 36, 0.35);
+        }
+
         .bg-black {
             background-color: #000000;
+        }
+
+        .bg-\[\#141024\] {
+            background-color: #141024;
+        }
+
+        .bg-\[\#1A1530\] {
+            background-color: #1A1530;
         }
 
         .bg-black\/80 {
@@ -783,8 +941,24 @@
             background-color: rgba(34, 197, 94, 0.2);
         }
 
+        .bg-cyan-400 {
+            background-color: #22d3ee;
+        }
+
         .bg-cyan-500\/10 {
             background-color: rgba(6, 182, 212, 0.1);
+        }
+
+        .bg-pink-500\/10 {
+            background-color: rgba(236, 72, 153, 0.12);
+        }
+
+        .bg-amber-400 {
+            background-color: #fbbf24;
+        }
+
+        .bg-amber-400\/10 {
+            background-color: rgba(251, 191, 36, 0.12);
         }
 
         .hover\:bg-green-400:hover {
@@ -793,6 +967,10 @@
 
         .hover\:bg-cyan-400:hover {
             background-color: #22d3ee;
+        }
+
+        .hover\:bg-pink-500:hover {
+            background-color: #ff2a7a;
         }
 
         .bg-gradient-to-b {
@@ -822,6 +1000,10 @@
 
         .to-cyan-900\/5 {
             --tw-gradient-to: rgba(22, 78, 99, 0.06);
+        }
+
+        .to-pink-900\/5 {
+            --tw-gradient-to: rgba(131, 24, 67, 0.07);
         }
 
         .backdrop-blur-md {
@@ -861,6 +1043,11 @@
             line-height: 1.75rem;
         }
 
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
         .text-3xl {
             font-size: 1.875rem;
             line-height: 2.25rem;
@@ -880,6 +1067,10 @@
             font-weight: 300;
         }
 
+        .font-medium {
+            font-weight: 500;
+        }
+
         .font-bold {
             font-weight: 700;
         }
@@ -890,6 +1081,10 @@
 
         .uppercase {
             text-transform: uppercase;
+        }
+
+        .leading-none {
+            line-height: 1;
         }
 
         .leading-relaxed {
@@ -928,6 +1123,10 @@
             color: #000000;
         }
 
+        .text-\[\#141024\] {
+            color: #141024;
+        }
+
         .text-gray-300 {
             color: #d1d5db;
         }
@@ -960,6 +1159,18 @@
             color: #22d3ee;
         }
 
+        .text-pink-400 {
+            color: #ff2a7a;
+        }
+
+        .text-amber-300 {
+            color: #fcd34d;
+        }
+
+        .text-amber-400 {
+            color: #fbbf24;
+        }
+
         .hover\:text-white:hover {
             color: #ffffff;
         }
@@ -970,6 +1181,10 @@
 
         .hover\:text-cyan-400:hover {
             color: #22d3ee;
+        }
+
+        .hover\:text-pink-400:hover {
+            color: #ff2a7a;
         }
 
         .hover\:text-purple-400:hover {
@@ -994,6 +1209,10 @@
 
         .focus\:outline-none:focus {
             outline: none;
+        }
+
+        .-rotate-3 {
+            transform: rotate(-3deg);
         }
 
         .-rotate-90 {
@@ -1190,13 +1409,12 @@
                 <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up"
                     style="animation-delay: 0.2s;">
                     Bienvenido a KAI Labs. Aquí ponemos a prueba nuestra propia ingeniería desarrollando productos desde
-                    cero con un único propósito: eliminar cualquier fricción entre las personas y la Inteligencia
-                    Artificial.
+                    cero con un único propósito: eliminar cualquier fricción entre las personas y la tecnología.
                 </p>
             </div>
         </section>
 
-        <!-- ASKKIBO SECTION -->
+        <!-- PROYECTO 01: ASKKIBO SECTION -->
         <section
             class="w-full py-20 px-6 border-t border-white/5 bg-gradient-to-b from-transparent to-green-900/5 relative reveal">
             <div class="max-w-6xl mx-auto">
@@ -1237,7 +1455,7 @@
                     </div>
 
                     <div class="w-full md:w-1/2 order-1 md:order-2">
-                        <div class="flex gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span
                                 class="px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-[10px] font-mono tracking-widest text-green-400 uppercase">Finanzas
                                 Personales</span>
@@ -1316,14 +1534,14 @@
             </div>
         </section>
 
-        <!-- CALORITRACK SECTION -->
+        <!-- PROYECTO 02: CALORITRACK SECTION -->
         <section
             class="w-full py-20 px-6 border-t border-white/5 bg-gradient-to-b from-transparent to-cyan-900/5 relative reveal">
             <div class="max-w-6xl mx-auto">
                 <div class="flex flex-col md:flex-row gap-16 items-center">
 
                     <div class="w-full md:w-1/2">
-                        <div class="flex gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
                             <span
                                 class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-[10px] font-mono tracking-widest text-cyan-400 uppercase">Salud
                                 y Bienestar</span>
@@ -1442,7 +1660,187 @@
             </div>
         </section>
 
-        <!-- COMING SOON SECTION -->
+        <!-- PROYECTO 03: HITERA SECTION -->
+        <section
+            class="w-full py-20 px-6 border-t border-white/5 bg-gradient-to-b from-transparent to-pink-900/5 relative reveal">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-16 items-center">
+
+                    <!-- Simulación Visual D-Synth ("Tactile Synthwave") -->
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <div
+                            class="spotlight-card glass-panel p-8 md:p-12 rounded-3xl border border-pink-500/20 relative overflow-hidden">
+                            <div class="absolute -top-20 -left-20 w-64 h-64 pointer-events-none"
+                                style="background: radial-gradient(circle, rgba(255, 42, 122, 0.22) 0%, rgba(255, 138, 0, 0.08) 45%, transparent 70%);">
+                            </div>
+
+                            <div class="space-y-6 relative z-10">
+                                <!-- Barra de Sala y Sello Intergeneracional -->
+                                <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                                        <span class="font-mono text-xs text-cyan-400 font-bold tracking-widest">SALA:
+                                            H7XK</span>
+                                    </div>
+                                    <span
+                                        class="px-2.5 py-1 rounded-full bg-amber-400 text-[#141024] font-mono text-[10px] font-bold tracking-widest uppercase">★
+                                        50s–20s</span>
+                                </div>
+
+                                <!-- Vinilo Sunset + Carta Revelada en Papel Álbum (#FAF6F0) -->
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                                    <!-- Vinilo Misterioso Girando -->
+                                    <div class="flex items-center gap-4">
+                                        <div
+                                            class="relative w-24 h-24 rounded-2xl synth-gradient p-4 flex items-center justify-center flex-shrink-0">
+                                            <div
+                                                class="w-16 h-16 rounded-full bg-[#141024] border-2 border-white/20 flex items-center justify-center vinyl-spin">
+                                                <div
+                                                    class="w-6 h-6 rounded-full synth-gradient flex items-center justify-center text-[10px] font-mono font-bold text-white">
+                                                    ?</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="font-mono text-[10px] uppercase tracking-widest text-pink-400 block mb-1">🎧
+                                                Sonando Hit (30s)</span>
+                                            <p class="text-white font-bold text-sm mb-2">¿En qué año se lanzó?</p>
+                                            <div class="flex items-end gap-1 h-4">
+                                                <span class="w-1 h-4 bg-cyan-400 rounded-full eq-bar-1"></span>
+                                                <span class="w-1 h-4 bg-cyan-400 rounded-full eq-bar-2"></span>
+                                                <span class="w-1 h-4 bg-cyan-400 rounded-full eq-bar-3"></span>
+                                                <span class="w-1 h-4 bg-cyan-400 rounded-full eq-bar-4"></span>
+                                                <span class="font-mono text-[10px] text-gray-400 ml-2">💿 4
+                                                    Discos</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Carta Física Papel Álbum (Contraste 15.4:1 AAA) -->
+                                    <div
+                                        class="album-paper-card p-4 rounded-2xl -rotate-3 w-full md:w-auto min-w-[145px] text-center">
+                                        <span
+                                            class="font-mono text-[10px] uppercase tracking-widest font-bold block text-gray-500">Hit
+                                            Verificado</span>
+                                        <span
+                                            class="font-mono text-3xl font-black tracking-tighter block leading-none mt-1 mb-1 text-[#141024]">1984</span>
+                                        <span class="text-xs font-bold block text-[#141024]">Clásico de Época</span>
+                                    </div>
+                                </div>
+
+                                <!-- Alerta de Ventana de Robo en Tiempo Real (5.0s) -->
+                                <div
+                                    class="p-4 rounded-2xl bg-amber-400/10 border border-amber-400/30 flex justify-between items-center gap-4">
+                                    <div>
+                                        <span
+                                            class="font-mono text-[10px] uppercase tracking-widest text-amber-300 block">⚡
+                                            Ventana de Robo • 5.0s</span>
+                                        <span class="text-xs text-white font-medium">Hueco seleccionado: «Entre 1984 y
+                                            1996»</span>
+                                    </div>
+                                    <span
+                                        class="px-3 py-2 rounded-xl bg-amber-400 text-[#141024] font-mono text-[10px] font-bold uppercase tracking-widest flex-shrink-0">
+                                        ¡Robar Hit! (-2 💿)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Descripción Ejecutiva de HitEra -->
+                    <div class="w-full md:w-1/2 order-1 md:order-2">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-[10px] font-mono tracking-widest text-pink-400 uppercase">Social
+                                Music Game</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono tracking-widest text-gray-300 uppercase">PWA
+                                Instantánea • Smart TV</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-[10px] font-mono tracking-widest text-amber-400 uppercase">★
+                                50s–20s</span>
+                        </div>
+
+                        <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tight">HitEra</h2>
+                        <p class="text-xl text-gray-300 mb-8 font-light">Escucha el hit, ponle año y róbate la noche: la
+                            plataforma musical multijugador en tiempo real que transforma cada celular en un mando de
+                            fiesta.</p>
+
+                        <ul class="space-y-6 mb-10">
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-pink-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="block text-white mb-1">Acceso en 10 Segundos, DJ Transferible y Modo
+                                        TV</strong>
+                                    <span class="text-sm text-gray-400 font-light leading-relaxed">Cero descargas en
+                                        tiendas y cero cuentas obligatorias. Los invitados escanean un QR o ingresan el
+                                        código de 4 letras en <strong>hitera.app</strong> para jugar desde su propio
+                                        teléfono, pudiendo transferir en vivo el <strong>Gafete de DJ (🎧)</strong> para
+                                        sonar por Bluetooth o proyectar el tablero panorámico en una <strong>Smart TV
+                                            (📺)</strong>.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="block text-white mb-1">Poderes Digitales y Asalto en 5.0
+                                        Segundos</strong>
+                                    <span class="text-sm text-gray-400 font-light leading-relaxed">Escucha fragmentos
+                                        misteriosos de 30 segundos y ubícalos en tu línea del tiempo. Administra
+                                        estratégicamente tus <strong>Discos (💿)</strong> para activar el <strong>Radar
+                                            de Época 50/50</strong>, proteger tu jugada con el <strong>Candado
+                                            Anti-Robo</strong> o robarle el hit a tus amigos durante una ventana de
+                                        adrenalina de 5 segundos si se equivocan de década.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="block text-white mb-1">Diseño Multigeneracional (50s–20s) y Recap
+                                        Musical</strong>
+                                    <span class="text-sm text-gray-400 font-light leading-relaxed">Nuestro sistema
+                                        visual <em>Tactile Synthwave</em> revela cada canción sobre acabado físico
+                                        <em>Papel Álbum</em> de contraste AAA para lectura instantánea de los 15 a los
+                                        75 años, cerrando la velada con un <strong>Recap Musical de la Noche</strong>
+                                        conectado directamente a <strong>Apple Music</strong> y
+                                        <strong>Spotify</strong>.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="https://hitera.app" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-white text-black font-mono font-bold text-xs uppercase tracking-widest py-4 px-8 rounded-full hover:bg-pink-500 hover:text-white transition-colors">
+                            Visitar HitEra
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTO 04: COMING SOON SECTION -->
         <section class="w-full py-24 px-6 border-t border-white/5 reveal">
             <div class="max-w-4xl mx-auto text-center">
                 <div
@@ -1459,7 +1857,7 @@
                         </svg>
                     </div>
 
-                    <h3 class="text-3xl font-bold mb-4 text-white/50 tracking-tight">Proyecto #03</h3>
+                    <h3 class="text-3xl font-bold mb-4 text-white/50 tracking-tight">Proyecto #04</h3>
                     <p class="text-gray-500 font-mono text-sm uppercase tracking-widest mb-6">En Fase de Desarrollo</p>
                     <p class="text-gray-400 font-light max-w-lg mx-auto leading-relaxed">
                         Nuestro equipo está entrenando un nuevo Agente especializado. Muy pronto revelaremos la
@@ -1493,6 +1891,8 @@
                         class="text-gray-400 hover:text-green-400 transition-colors">AskKibo</a>
                     <a href="https://caloritrack.com" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-cyan-400 transition-colors">CaloriTrack</a>
+                    <a href="https://hitera.app" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-pink-400 transition-colors">HitEra</a>
                     <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">Portafolio</a>
                 </div>
             </div>
